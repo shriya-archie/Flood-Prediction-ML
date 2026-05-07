@@ -15,45 +15,43 @@ I was inspired to create this project after watching a Netflix documentary about
 I wanted to create a beginner-friendly version of a flood prediction system to strengthen my understanding of Machine Learning concepts while working on a real-world problem.
 
 Technologies Used
-Python
-Pandas
-NumPy
-Scikit-learn
-Visual Studio Code
-Machine Learning Concepts Used
-Data Cleaning
-Handling Missing Values
-Feature Selection
-Train-Test Split
-Model Training
-Regression and Classification
-Accuracy Score
-Mean Absolute Error (MAE)
-Dataset
-Dataset Source: Kaggle Flood Prediction Dataset
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Visual Studio Code
+- Machine Learning Concepts Used
+- Data Cleaning
+- Handling Missing Values
+- Feature Selection
+- Train-Test Split
+- Model Training
+- Regression and Classification
+- Accuracy Score
+- Mean Absolute Error (MAE)
+- Dataset
+### Dataset Source: Kaggle Flood Prediction Dataset
 
 I chose this dataset because it contains a wide range of environmental and human-induced factors related to floods. The dataset includes features related to rainfall, drainage systems, urbanization, deforestation, climate conditions, and more.
 
-Some important features in the dataset include:
+### Some important features in the dataset include:
 
-Monsoon Intensity
-Drainage Systems
-Urbanization
-Deforestation
-River Management
-Climate Change
-Wetland Loss
-Encroachments
-Agricultural Practices
+- Monsoon Intensity
+- Drainage Systems
+- Urbanization
+- Deforestation
+- River Management
+- Climate Change
+- Wetland Loss
+- Encroachments
+- Agricultural Practices
 
-Some columns in the dataset represented similar environmental patterns and could introduce redundancy into the model.
 
-For example:
-
-Topography Drainage and Drainage Systems both describe water flow and drainage efficiency.
+### Some columns in the dataset represented similar environmental patterns and could introduce redundancy into the model.
+- For example: Topography Drainage and Drainage Systems both describe water flow and drainage efficiency.
 Agricultural Practices, Deforestation, Urbanization, and Encroachments all reflect human activities affecting flood risk.
 
-Removing highly similar or correlated features helped reduce redundancy and improve model generalization.
+- Removing highly similar or correlated features helped reduce redundancy and improve model generalization.
 
 ## Models Used
 ### 1. Linear Regression
@@ -93,22 +91,23 @@ Random Forest is one of the most suitable algorithms for this problem.
 
 Random Forest performed better because flood prediction depends on multiple interacting environmental conditions rather than a simple linear relationship.
 
-Results
+### Results
 
-Among the models used:
+#### Among the models used:
 
-Linear Regression showed weaker performance due to the non-linear nature of the dataset.
-Logistic Regression improved classification performance significantly.
-Random Forest produced the best overall predictions for flood risk.
+1. Linear Regression showed weaker performance due to the non-linear nature of the dataset.
+3. Logistic Regression improved classification performance significantly.
+3. Random Forest produced the best overall predictions for flood risk.
 
-Evaluation metrics used:
+### Evaluation metrics used:
 
-Accuracy Score
-Mean Absolute Error (MAE)
-Future Improvements
-Use larger and more realistic datasets
-Integrate real-time weather APIs
-Experiment with advanced models like XGBoost
-Deploy the project using Flask or Streamlit
-Add data visualization dashboards
-Incorporate satellite and GIS data for improved accuracy
+- Accuracy Score
+- Mean Absolute Error (MAE)
+  
+### Future Improvements
+- Use larger and more realistic datasets
+- Integrate real-time weather APIs
+- Experiment with advanced models like XGBoost
+- Deploy the project using Flask or Streamlit
+- Add data visualization dashboards
+- Incorporate satellite and GIS data for improved accuracy
